@@ -370,6 +370,7 @@ namespace TailwindPOS
 			this.lblMessage.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblMessage.Location = new System.Drawing.Point(8, 8);
+			this.lblMessage.MinimumSize = new System.Drawing.Size(297, 49);
 			this.lblMessage.Name = "lblMessage";
 			this.lblMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblMessage.Size = new System.Drawing.Size(297, 49);
@@ -384,6 +385,7 @@ namespace TailwindPOS
 			this.lblPennies.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPennies.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblPennies.Location = new System.Drawing.Point(8, 72);
+			this.lblPennies.MinimumSize = new System.Drawing.Size(145, 49);
 			this.lblPennies.Name = "lblPennies";
 			this.lblPennies.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPennies.Size = new System.Drawing.Size(145, 49);
@@ -398,6 +400,7 @@ namespace TailwindPOS
 			this.lblNickels.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblNickels.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblNickels.Location = new System.Drawing.Point(8, 128);
+			this.lblNickels.MinimumSize = new System.Drawing.Size(145, 49);
 			this.lblNickels.Name = "lblNickels";
 			this.lblNickels.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblNickels.Size = new System.Drawing.Size(145, 49);
@@ -412,6 +415,7 @@ namespace TailwindPOS
 			this.lblDimes.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblDimes.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblDimes.Location = new System.Drawing.Point(8, 184);
+			this.lblDimes.MinimumSize = new System.Drawing.Size(145, 49);
 			this.lblDimes.Name = "lblDimes";
 			this.lblDimes.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblDimes.Size = new System.Drawing.Size(145, 49);
@@ -426,6 +430,7 @@ namespace TailwindPOS
 			this.lblQuarters.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblQuarters.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblQuarters.Location = new System.Drawing.Point(8, 240);
+			this.lblQuarters.MinimumSize = new System.Drawing.Size(145, 49);
 			this.lblQuarters.Name = "lblQuarters";
 			this.lblQuarters.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblQuarters.Size = new System.Drawing.Size(145, 49);
@@ -440,6 +445,7 @@ namespace TailwindPOS
 			this.lblHalfDollars.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblHalfDollars.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblHalfDollars.Location = new System.Drawing.Point(8, 304);
+			this.lblHalfDollars.MinimumSize = new System.Drawing.Size(145, 65);
 			this.lblHalfDollars.Name = "lblHalfDollars";
 			this.lblHalfDollars.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblHalfDollars.Size = new System.Drawing.Size(145, 65);
@@ -454,6 +460,7 @@ namespace TailwindPOS
 			this.lblOnes.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblOnes.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblOnes.Location = new System.Drawing.Point(296, 72);
+			this.lblOnes.MinimumSize = new System.Drawing.Size(185, 41);
 			this.lblOnes.Name = "lblOnes";
 			this.lblOnes.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblOnes.Size = new System.Drawing.Size(185, 41);
@@ -468,6 +475,7 @@ namespace TailwindPOS
 			this.lblFives.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblFives.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblFives.Location = new System.Drawing.Point(296, 128);
+			this.lblFives.MinimumSize = new System.Drawing.Size(185, 41);
 			this.lblFives.Name = "lblFives";
 			this.lblFives.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblFives.Size = new System.Drawing.Size(185, 41);
@@ -482,6 +490,7 @@ namespace TailwindPOS
 			this.lblTens.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTens.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTens.Location = new System.Drawing.Point(296, 184);
+			this.lblTens.MinimumSize = new System.Drawing.Size(185, 41);
 			this.lblTens.Name = "lblTens";
 			this.lblTens.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTens.Size = new System.Drawing.Size(185, 41);
@@ -496,6 +505,7 @@ namespace TailwindPOS
 			this.lblTwenties.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTwenties.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTwenties.Location = new System.Drawing.Point(296, 240);
+			this.lblTwenties.MinimumSize = new System.Drawing.Size(185, 41);
 			this.lblTwenties.Name = "lblTwenties";
 			this.lblTwenties.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTwenties.Size = new System.Drawing.Size(185, 41);
@@ -510,6 +520,7 @@ namespace TailwindPOS
 			this.lblFifties.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblFifties.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblFifties.Location = new System.Drawing.Point(296, 288);
+			this.lblFifties.MinimumSize = new System.Drawing.Size(185, 41);
 			this.lblFifties.Name = "lblFifties";
 			this.lblFifties.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblFifties.Size = new System.Drawing.Size(185, 41);
@@ -524,6 +535,7 @@ namespace TailwindPOS
 			this.lblHundreds.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblHundreds.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblHundreds.Location = new System.Drawing.Point(296, 344);
+			this.lblHundreds.MinimumSize = new System.Drawing.Size(185, 41);
 			this.lblHundreds.Name = "lblHundreds";
 			this.lblHundreds.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblHundreds.Size = new System.Drawing.Size(185, 41);
@@ -538,6 +550,7 @@ namespace TailwindPOS
 			this.lblTotalTitle.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTotalTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTotalTitle.Location = new System.Drawing.Point(568, 8);
+			this.lblTotalTitle.MinimumSize = new System.Drawing.Size(113, 57);
 			this.lblTotalTitle.Name = "lblTotalTitle";
 			this.lblTotalTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTotalTitle.Size = new System.Drawing.Size(113, 57);
@@ -552,6 +565,7 @@ namespace TailwindPOS
 			this.lblTotal.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTotal.Location = new System.Drawing.Point(728, 8);
+			this.lblTotal.MinimumSize = new System.Drawing.Size(249, 65);
 			this.lblTotal.Name = "lblTotal";
 			this.lblTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTotal.Size = new System.Drawing.Size(249, 65);

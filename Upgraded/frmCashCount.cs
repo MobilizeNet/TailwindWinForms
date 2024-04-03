@@ -49,13 +49,7 @@ namespace TailwindPOS
 		TextBox m_LastTextBox = null;
 		decimal m_total = 0;
 
-		public decimal Total
-		{
-			get
-			{
-				return m_total;
-			}
-		}
+		public decimal Total => m_total;
 
 
 		private void cbClear_Click(Object eventSender, EventArgs eventArgs)
@@ -102,11 +96,9 @@ namespace TailwindPOS
 			txtHundreds.BackColor = SystemColors.Window;
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
-		private void Form_Load(Object eventSender, EventArgs eventArgs)
-		{
-			ucNumbers.ShowValue = false;
-		}
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
+		private void Form_Load(Object eventSender, EventArgs eventArgs) => ucNumbers.ShowValue = false;
+
 
 		private void Highlight(TextBox X)
 		{
@@ -115,123 +107,78 @@ namespace TailwindPOS
 			m_LastTextBox = X;
 		}
 
-		private void txtDimes_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtDimes);
-		}
+		private void txtDimes_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtDimes);
 
-		private void txtDimes_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtDimes);
-		}
 
-		private void txtFifties_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtFifties);
-		}
+		private void txtDimes_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtDimes);
 
-		private void txtFifties_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtFifties);
-		}
 
-		private void txtFives_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtFives);
-		}
+		private void txtFifties_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtFifties);
 
-		private void txtFives_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtFives);
-		}
 
-		private void txtHalfDollars_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtHalfDollars);
-		}
+		private void txtFifties_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtFifties);
 
-		private void txtHalfDollars_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtHalfDollars);
-		}
 
-		private void txtHundreds_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtHundreds);
-		}
+		private void txtFives_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtFives);
 
-		private void txtHundreds_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtHundreds);
-		}
 
-		private void txtNickels_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtNickels);
-		}
+		private void txtFives_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtFives);
 
-		private void txtNickels_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtNickels);
 
-		}
+		private void txtHalfDollars_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtHalfDollars);
 
-		private void txtOnes_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtOnes);
-		}
 
-		private void txtOnes_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtOnes);
-		}
+		private void txtHalfDollars_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtHalfDollars);
 
-		private void txtPennies_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtPennies);
-		}
 
-		private void txtPennies_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtPennies);
-		}
+		private void txtHundreds_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtHundreds);
 
-		private void txtQuarters_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtQuarters);
-		}
 
-		private void txtQuarters_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtQuarters);
-		}
+		private void txtHundreds_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtHundreds);
 
-		private void txtTens_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtTens);
-		}
 
-		private void txtTens_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			ExitTextBox(txtTens);
-		}
+		private void txtNickels_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtNickels);
 
-		private void txtTwenties_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtTwenties);
-		}
 
-		private void txtTwenties_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			Highlight(txtTwenties);
-		}
+		private void txtNickels_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtNickels);
+
+
+		private void txtOnes_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtOnes);
+
+
+		private void txtOnes_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtOnes);
+
+
+		private void txtPennies_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtPennies);
+
+
+		private void txtPennies_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtPennies);
+
+
+		private void txtQuarters_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtQuarters);
+
+
+		private void txtQuarters_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtQuarters);
+
+
+		private void txtTens_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtTens);
+
+
+		private void txtTens_Leave(Object eventSender, EventArgs eventArgs) => ExitTextBox(txtTens);
+
+
+		private void txtTwenties_Enter(Object eventSender, EventArgs eventArgs) => Highlight(txtTwenties);
+
+
+		private void txtTwenties_Leave(Object eventSender, EventArgs eventArgs) => Highlight(txtTwenties);
+
 
 		private void ucNumbers_OnBack(Object Sender, EventArgs e)
 		{
-			string val = "";
+			_ = "";
 			if (m_LastTextBox != null)
 			{
-				val = m_LastTextBox.Text.Trim();
+				string val = m_LastTextBox.Text.Trim();
 				if (val == "0")
 				{
 					m_LastTextBox.Text = "0";
@@ -247,10 +194,10 @@ namespace TailwindPOS
 		private void ucNumbers_OnNumber(Object Sender, ucNumbersPad.OnNumberEventArgs e)
 		{
 			string Number = e.Number;
-			string val = "";
+			_ = "";
 			if (m_LastTextBox != null)
 			{
-				val = m_LastTextBox.Text.Trim();
+				string val = m_LastTextBox.Text.Trim();
 				if (val == "0")
 				{
 					m_LastTextBox.Text = Number;
@@ -269,7 +216,7 @@ namespace TailwindPOS
 				}
 				else
 				{
-					m_LastTextBox.Text = m_LastTextBox.Text + Number;
+					m_LastTextBox.Text = $"{m_LastTextBox.Text}{Number}";
 				}
 			}
 			UpdateTotals();
@@ -278,10 +225,10 @@ namespace TailwindPOS
 		public void ExitTextBox(TextBox txt)
 		{
 			string contents = txt.Text;
-			int newValue = 0;
+			_ = 0;
 			try
 			{
-				newValue = Convert.ToInt32(Double.Parse(contents));
+				int newValue = Convert.ToInt32(Double.Parse(contents));
 				txt.Text = newValue.ToString();
 				UpdateTotals();
 			}

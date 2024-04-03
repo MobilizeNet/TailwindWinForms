@@ -108,6 +108,7 @@ namespace TailwindPOS
 			this.lblMessage.Font = new System.Drawing.Font("Gin", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblMessage.Location = new System.Drawing.Point(40, 24);
+			this.lblMessage.MinimumSize = new System.Drawing.Size(313, 41);
 			this.lblMessage.Name = "lblMessage";
 			this.lblMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblMessage.Size = new System.Drawing.Size(313, 41);
@@ -117,7 +118,7 @@ namespace TailwindPOS
 			// frmGiftCardCode
 			// 
 			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(17, 31);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(688, 213);

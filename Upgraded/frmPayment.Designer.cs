@@ -233,6 +233,7 @@ namespace TailwindPOS
 			this.lblPaymentReady.Font = new System.Drawing.Font("Gin", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPaymentReady.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblPaymentReady.Location = new System.Drawing.Point(48, 184);
+			this.lblPaymentReady.MinimumSize = new System.Drawing.Size(401, 193);
 			this.lblPaymentReady.Name = "lblPaymentReady";
 			this.lblPaymentReady.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPaymentReady.Size = new System.Drawing.Size(401, 193);
@@ -248,6 +249,7 @@ namespace TailwindPOS
 			this.lblChange.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblChange.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblChange.Location = new System.Drawing.Point(832, 152);
+			this.lblChange.MinimumSize = new System.Drawing.Size(361, 41);
 			this.lblChange.Name = "lblChange";
 			this.lblChange.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblChange.Size = new System.Drawing.Size(361, 41);
@@ -263,6 +265,7 @@ namespace TailwindPOS
 			this.lblChangeTitle.Font = new System.Drawing.Font("Gin", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblChangeTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblChangeTitle.Location = new System.Drawing.Point(864, 104);
+			this.lblChangeTitle.MinimumSize = new System.Drawing.Size(329, 49);
 			this.lblChangeTitle.Name = "lblChangeTitle";
 			this.lblChangeTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblChangeTitle.Size = new System.Drawing.Size(329, 49);
@@ -278,6 +281,7 @@ namespace TailwindPOS
 			this.lblPaidSoFarTitle.Font = new System.Drawing.Font("Gin", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPaidSoFarTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblPaidSoFarTitle.Location = new System.Drawing.Point(864, 200);
+			this.lblPaidSoFarTitle.MinimumSize = new System.Drawing.Size(329, 49);
 			this.lblPaidSoFarTitle.Name = "lblPaidSoFarTitle";
 			this.lblPaidSoFarTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPaidSoFarTitle.Size = new System.Drawing.Size(329, 49);
@@ -293,6 +297,7 @@ namespace TailwindPOS
 			this.lblRemaining.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblRemaining.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblRemaining.Location = new System.Drawing.Point(832, 56);
+			this.lblRemaining.MinimumSize = new System.Drawing.Size(361, 41);
 			this.lblRemaining.Name = "lblRemaining";
 			this.lblRemaining.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblRemaining.Size = new System.Drawing.Size(361, 41);
@@ -308,6 +313,7 @@ namespace TailwindPOS
 			this.lblRemaingTitle.Font = new System.Drawing.Font("Gin", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblRemaingTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblRemaingTitle.Location = new System.Drawing.Point(864, 8);
+			this.lblRemaingTitle.MinimumSize = new System.Drawing.Size(329, 49);
 			this.lblRemaingTitle.Name = "lblRemaingTitle";
 			this.lblRemaingTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblRemaingTitle.Size = new System.Drawing.Size(329, 49);
@@ -318,7 +324,7 @@ namespace TailwindPOS
 			// frmPayment
 			// 
 			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(17, 31);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(1219, 659);

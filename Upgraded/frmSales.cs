@@ -57,13 +57,7 @@ namespace TailwindPOS
 		decimal m_total = 0;
 		string m_lastReceipt = "";
 
-		public string LastReceipt
-		{
-			get
-			{
-				return m_lastReceipt;
-			}
-		}
+		public string LastReceipt => m_lastReceipt;
 
 
 		public void AddLine(string Code, string Description, decimal price)
@@ -95,10 +89,8 @@ namespace TailwindPOS
 			}
 		}
 
-		private void cbBreak_Click(Object eventSender, EventArgs eventArgs)
-		{
-			Pause();
-		}
+		private void cbBreak_Click(Object eventSender, EventArgs eventArgs) => Pause();
+
 
 		private void cbCustomerSearch_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -114,11 +106,11 @@ namespace TailwindPOS
 
 		private void cbLogOff_Click(Object eventSender, EventArgs eventArgs)
 		{
-			DialogResult result = (DialogResult) 0;
+			_ = (DialogResult) 0;
 			frmCashCount cash = null;
 			if (MainModule.IsShiftStarted())
 			{
-				result = MessageBox.Show("Are you ready to end your shift", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.YesNo);
+				DialogResult result = MessageBox.Show("Are you ready to end your shift", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.YesNo);
 				if (result == System.Windows.Forms.DialogResult.Yes)
 				{
 					cash = new frmCashCount();
@@ -167,15 +159,11 @@ namespace TailwindPOS
 			}
 		}
 
-		private void cbQuantity_Click(Object eventSender, EventArgs eventArgs)
-		{
-			ToggleQuantity();
-		}
+		private void cbQuantity_Click(Object eventSender, EventArgs eventArgs) => ToggleQuantity();
 
-		private void cbRePrint_Click(Object eventSender, EventArgs eventArgs)
-		{
-			MessageBox.Show("Printing Last Receipt", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()));
-		}
+
+		private void cbRePrint_Click(Object eventSender, EventArgs eventArgs) => MessageBox.Show("Printing Last Receipt", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()));
+
 
 		private void cbVoidItem_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -197,13 +185,13 @@ namespace TailwindPOS
 		public bool ConfirmVoidItem(int itemRow)
 		{
 			bool result = false;
-			DialogResult res = (DialogResult) 0;
-			string itemName = "";
+			_ = (DialogResult) 0;
+			_ = "";
 			OrderedDictionary items = GetItems();
 			if (items.Count > 0)
 			{
-				itemName = Convert.ToString(fgItems[itemRow, 2].Value);
-				res = MessageBox.Show("Are you sure you want remove line for " + itemName + "?", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.YesNo);
+				string itemName = Convert.ToString(fgItems[itemRow, 2].Value);
+				DialogResult res = MessageBox.Show($"Are you sure you want remove line for {itemName}?", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.YesNo);
 				result = res == System.Windows.Forms.DialogResult.Yes;
 			}
 			return result;
@@ -222,21 +210,21 @@ namespace TailwindPOS
 			OrderedDictionary coll = new OrderedDictionary(System.StringComparer.OrdinalIgnoreCase);
 			// Read info from grid
 			int tempForEndVar = fgItems.RowsCount - 1;
-			double qty = 0;
-			decimal price = 0;
-			int Code = 0;
-			string Desc = "";
+			_ = 0;
+			_ = 0;
+			_ = 0;
+			_ = "";
 			TicketItem item = null;
 			for (int i = 1; i <= tempForEndVar; i++)
 			{
 				// Quantity
-				qty = Convert.ToInt32(Double.Parse(Convert.ToString(fgItems[i, 0].Value)));
+				double qty = Convert.ToInt32(Double.Parse(Convert.ToString(fgItems[i, 0].Value)));
 				// Price
-				price = Decimal.Parse(Convert.ToString(fgItems[i, 3].Value), NumberStyles.Currency | NumberStyles.AllowExponent);
+				decimal price = Decimal.Parse(Convert.ToString(fgItems[i, 3].Value), NumberStyles.Currency | NumberStyles.AllowExponent);
 				// Code
-				Code = Convert.ToInt32(Decimal.Parse(Convert.ToString(fgItems[i, 1].Value), NumberStyles.Currency | NumberStyles.AllowExponent));
+				int Code = Convert.ToInt32(Decimal.Parse(Convert.ToString(fgItems[i, 1].Value), NumberStyles.Currency | NumberStyles.AllowExponent));
 				// Description
-				Desc = Convert.ToString(this.fgItems[i, 2].Value);
+				string Desc = Convert.ToString(this.fgItems[i, 2].Value);
 
 				// Create item info
 				// and insert it into collection
@@ -292,11 +280,9 @@ namespace TailwindPOS
 			this.fgItems[0, 4].Value = " Total ";
 		}
 
-		//UPGRADE_NOTE: (7001) The following declaration (ReturnFromPause) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
-		//private void ReturnFromPause()
-		//{
-			//Reset();
-		//}
+		//UPGRADE_NOTE: (7001) The following declaration (ReturnFromPause) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
+		//private void ReturnFromPause() => Reset();
+		//
 
 		public void SearchAndAddProduct(string productCode)
 		{
@@ -344,7 +330,7 @@ namespace TailwindPOS
 		}
 
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load(Object eventSender, EventArgs eventArgs)
 		{
 			Pause();
@@ -357,13 +343,13 @@ namespace TailwindPOS
 			string Text_Renamed = e.Text_Renamed;
 			// If we are on quantity mode
 			// we will update only the qty for the current item
-			int newqty = 0;
+			_ = 0;
 			decimal price = 0;
 			decimal Total = 0;
 			int qty = 0;
 			if (m_Toggle_Quantity)
 			{
-				newqty = Convert.ToInt32(Double.Parse(Text_Renamed));
+				int newqty = Convert.ToInt32(Double.Parse(Text_Renamed));
 				if (fgItems.CurrentRowIndex >= 1)
 				{
 					// Update quantity
@@ -385,14 +371,14 @@ namespace TailwindPOS
 		{
 			decimal Total = 0;
 			int tempForEndVar = fgItems.RowsCount - 1;
-			double qty = 0;
-			decimal price = 0;
+			_ = 0;
+			_ = 0;
 			for (int i = 1; i <= tempForEndVar; i++)
 			{
 				// Quantity
-				qty = Convert.ToInt32(Double.Parse(Convert.ToString(fgItems[i, 0].Value)));
+				double qty = Convert.ToInt32(Double.Parse(Convert.ToString(fgItems[i, 0].Value)));
 				// Price
-				price = Decimal.Parse(Convert.ToString(fgItems[i, 3].Value), NumberStyles.Currency | NumberStyles.AllowExponent);
+				decimal price = Decimal.Parse(Convert.ToString(fgItems[i, 3].Value), NumberStyles.Currency | NumberStyles.AllowExponent);
 				Total += ((decimal) (qty * ((double) price)));
 				// Total
 				fgItems[i, 4].Value = Total.ToString();

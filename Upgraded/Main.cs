@@ -38,10 +38,7 @@ namespace TailwindPOS
 				}
 				return _POSSystems;
 			}
-			set
-			{
-				_POSSystems = value;
-			}
+			set => _POSSystems = value;
 		}
 
 
@@ -57,10 +54,7 @@ namespace TailwindPOS
 				}
 				return _CurrentPOS;
 			}
-			set
-			{
-				_CurrentPOS = value;
-			}
+			set => _CurrentPOS = value;
 		}
 
 		private static ShiftInfo _CurrentShift = null;
@@ -74,10 +68,7 @@ namespace TailwindPOS
 				}
 				return _CurrentShift;
 			}
-			set
-			{
-				_CurrentShift = value;
-			}
+			set => _CurrentShift = value;
 		}
 
 		public static int CurrentTicketID = 0;
@@ -92,8 +83,8 @@ namespace TailwindPOS
 			DbCommand command = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			command.Connection = conn;
 			UpgradeHelpers.DB.DbConnectionHelper.ResetCommandTimeOut(command);
-			command.CommandText = "Insert into Tickets(Ticket_Datetime, Total, Taxes, CustomerID,UserID,POSID, Status) " + 
-			                      " values (@TicketDateTime, 0, 0, @CustomerID, @UserID, @POSID, 1)";
+			command.CommandText = $"Insert into Tickets(Ticket_Datetime, Total, Taxes, CustomerID,UserID,POSID, Status) " +
+			                      $" values (@TicketDateTime, 0, 0, @CustomerID, @UserID, @POSID, 1)";
 			DbParameter TempParameter = null;
 			TempParameter = command.CreateParameter();
 			TempParameter.ParameterName = "@TicketDateTime";
@@ -140,8 +131,8 @@ namespace TailwindPOS
 			DbCommand command = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			command.Connection = conn;
 			UpgradeHelpers.DB.DbConnectionHelper.ResetCommandTimeOut(command);
-			command.CommandText = "Update Tickets set Total = @Total, Taxes = @Taxes, Status = 0 " + 
-			                      " Where POSID = @POSID and TicketID = @TicketID";
+			command.CommandText = $"Update Tickets set Total = @Total, Taxes = @Taxes, Status = 0 " +
+			                      $" Where POSID = @POSID and TicketID = @TicketID";
 			DbParameter TempParameter = null;
 			TempParameter = command.CreateParameter();
 			TempParameter.ParameterName = "@Total";
@@ -190,8 +181,8 @@ namespace TailwindPOS
 			DbCommand command = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			command.Connection = conn;
 			UpgradeHelpers.DB.DbConnectionHelper.ResetCommandTimeOut(command);
-			command.CommandText = "Update Shifts set EndShift = @EndShift, EndCash = @EndCash) " + 
-			                      " where POSID = @POSID and UserID = @UserID and ShiftID = @ShiftID";
+			command.CommandText = $"Update Shifts set EndShift = @EndShift, EndCash = @EndCash) " +
+			                      $" where POSID = @POSID and UserID = @UserID and ShiftID = @ShiftID";
 			DbParameter TempParameter = null;
 			TempParameter = command.CreateParameter();
 			TempParameter.ParameterName = "@POSID";
@@ -279,11 +270,11 @@ namespace TailwindPOS
 
 		internal static ADORecordSetHelper FindCustomers(string customerInfo)
 		{
-			string query = "select * from Customers where LastName = @keyword " + 
-			               "Union  " + 
-			               "Select * from Customers where FirstName = @keyword  " + 
-			               "Union " + 
-			               "Select * from Customers where email = @keyword  ";
+			string query = $"select * from Customers where LastName = @keyword " +
+			               $"Union  " +
+			               $"Select * from Customers where FirstName = @keyword  " +
+			               $"Union " +
+			               $"Select * from Customers where email = @keyword  ";
 
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
@@ -372,7 +363,7 @@ namespace TailwindPOS
 			conn.Close();
 			if (rs.RecordCount > 0)
 			{
-				return Convert.ToString(rs["FirstName"]) + " " + Convert.ToString(rs["LastName"]) + Environment.NewLine + Convert.ToString(rs["Email"]);
+				return $"{Convert.ToString(rs["FirstName"])} {Convert.ToString(rs["LastName"])}{Environment.NewLine}{Convert.ToString(rs["Email"])}";
 			}
 			else
 			{
@@ -410,10 +401,8 @@ namespace TailwindPOS
 			return coll;
 		}
 
-		internal static bool IsShiftStarted()
-		{
-			return CurrentShift.ShiftID != 0;
-		}
+		internal static bool IsShiftStarted() => CurrentShift.ShiftID != 0;
+
 
 
 		internal static string RunCreditCardPayment(string invoice, string amount)
@@ -422,7 +411,7 @@ namespace TailwindPOS
 			return strOut;
 		}
 
-		//UPGRADE_WARNING: (1047) Application will terminate when Sub Main() finishes. More Information: https://docs.mobilize.net/vbuc/ewis#1047
+		//UPGRADE_WARNING: (1047) Application will terminate when Sub Main() finishes. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1047
 		[STAThread]
 		public static void Main()
 		{
@@ -458,15 +447,13 @@ namespace TailwindPOS
 			DbConnection conn = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateConnection();
 			conn.ConnectionString = ConnectionString;
 			//conn.CursorLocation = adUseClient 'This is not supported by VBUC Conversion tool, but it doesn't affect the migrated result
-			//UPGRADE_TODO: (7010) The connection string must be verified to fullfill the .NET data provider connection string requirements. More Information: https://docs.mobilize.net/vbuc/ewis#7010
+			//UPGRADE_TODO: (7010) The connection string must be verified to fullfill the .NET data provider connection string requirements. More Information: https://docs.mobilize.net/vbuc/ewis/todos#id-7010
 			conn.Open();
 			return conn;
 		}
 
-		internal static string PadAmount(decimal amount)
-		{
-			return (new String(' ', 50) + amount.ToString("C")).Substring(Math.Max((new String(' ', 50) + amount.ToString("C")).Length - 15, 0));
-		}
+		internal static string PadAmount(decimal amount) => ($"{new String(' ', 50)}{amount.ToString("C")}").Substring(Math.Max(($"{new String(' ', 50)}{amount.ToString("C")}").Length - 15, 0));
+
 
 		internal static int PaymentStringToID(string paymentType)
 		{
@@ -516,8 +503,8 @@ namespace TailwindPOS
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			objcommand.Connection = conn;
 			UpgradeHelpers.DB.DbConnectionHelper.ResetCommandTimeOut(objcommand);
-			objcommand.CommandText = "UPDATE Breaks Set EndTime = @EndTime where" + 
-			                         " POSID = @POSID, ShiftID = @ShiftID, BreakID = @BreakID";
+			objcommand.CommandText = $"UPDATE Breaks Set EndTime = @EndTime where" +
+			                         $" POSID = @POSID, ShiftID = @ShiftID, BreakID = @BreakID";
 			DbParameter TempParameter = null;
 			TempParameter = objcommand.CreateParameter();
 			TempParameter.ParameterName = "@POSID";
@@ -559,14 +546,14 @@ namespace TailwindPOS
 
 		internal static int RegisterBreakStart(int POSID, int ShiftID, ref System.DateTime StartTime)
 		{
-			int result = 0;
+			_ = 0;
 			StartTime = DateTime.Parse(DateTimeHelper.ToString(StartTime));
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			objcommand.Connection = conn;
 			UpgradeHelpers.DB.DbConnectionHelper.ResetCommandTimeOut(objcommand);
-			objcommand.CommandText = "Insert into Breaks(POSID,ShiftID, StartTime) " + 
-			                         " values (@POSID, @ShiftID, @StartTime)";
+			objcommand.CommandText = $"Insert into Breaks(POSID,ShiftID, StartTime) " +
+			                         $" values (@POSID, @ShiftID, @StartTime)";
 			DbParameter TempParameter = null;
 			TempParameter = objcommand.CreateParameter();
 			TempParameter.ParameterName = "@POSID";
@@ -595,7 +582,7 @@ namespace TailwindPOS
 			objcommand.ExecuteNonQuery();
 
 			ADORecordSetHelper rs = ADORecordSetHelper.Open("select @@identity", conn, "");
-			result = Convert.ToInt32(rs[0]);
+			int result = Convert.ToInt32(rs[0]);
 
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
@@ -663,13 +650,13 @@ namespace TailwindPOS
 
 		internal static double SaveNewCustomer(string FirstName, string LastName, string Email, string Company, string Phone, string StreetAddress1, string StreetAddress2, string State, string City, string ZipCode, string County)
 		{
-			double result = 0;
+			_ = 0;
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			objcommand.Connection = conn;
 			UpgradeHelpers.DB.DbConnectionHelper.ResetCommandTimeOut(objcommand);
-			objcommand.CommandText = "Insert into Customers(FirstName, LastName, Email, Company, Phone, StreetAddress1, StreetAddress2, State, City, ZipCode, County) " + 
-			                         " values (@FirstName, @LastName, @Email, @Company, @Phone, @StreetAddress1, @StreetAddress2, @State, @City, @ZipCode, @County)";
+			objcommand.CommandText = $"Insert into Customers(FirstName, LastName, Email, Company, Phone, StreetAddress1, StreetAddress2, State, City, ZipCode, County) " +
+			                         $" values (@FirstName, @LastName, @Email, @Company, @Phone, @StreetAddress1, @StreetAddress2, @State, @City, @ZipCode, @County)";
 			DbParameter TempParameter = null;
 			TempParameter = objcommand.CreateParameter();
 			TempParameter.ParameterName = "@FirstName";
@@ -761,7 +748,7 @@ namespace TailwindPOS
 			UpgradeHelpers.DB.TransactionManager.SetCommandTransaction(objcommand);
 			objcommand.ExecuteNonQuery();
 			ADORecordSetHelper rs = ADORecordSetHelper.Open("select @@identity", conn, "");
-			result = Convert.ToDouble(rs[0]);
+			double result = Convert.ToDouble(rs[0]);
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;
@@ -873,15 +860,15 @@ namespace TailwindPOS
 
 		internal static int StartShiftWithAmount(int POSID, int UserID, ref System.DateTime StartShift, decimal StartCash)
 		{
-			int result = 0;
+			_ = 0;
 			StartShift = DateTime.Parse(DateTimeHelper.ToString(StartShift));
 			DbConnection conn = OpenConnection();
 			// We need to insert the shift information
 			DbCommand command = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			command.Connection = conn;
 			UpgradeHelpers.DB.DbConnectionHelper.ResetCommandTimeOut(command);
-			command.CommandText = "Insert into Shifts(POSID, UserID, StartShift, StartCash) " + 
-			                      " values (@POSID, @UserID, @StartShift, @StartCash)";
+			command.CommandText = $"Insert into Shifts(POSID, UserID, StartShift, StartCash) " +
+			                      $" values (@POSID, @UserID, @StartShift, @StartCash)";
 			DbParameter TempParameter = null;
 			TempParameter = command.CreateParameter();
 			TempParameter.ParameterName = "@POSID";
@@ -918,7 +905,7 @@ namespace TailwindPOS
 			command.ExecuteNonQuery();
 
 			ADORecordSetHelper rs = ADORecordSetHelper.Open("select @@identity", conn, "");
-			result = Convert.ToInt32(rs[0]);
+			int result = Convert.ToInt32(rs[0]);
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;
@@ -926,7 +913,7 @@ namespace TailwindPOS
 
 		internal static bool ValidateUserPassword(string UserID, string password)
 		{
-			bool result = false;
+			_ = false;
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 
@@ -953,7 +940,7 @@ namespace TailwindPOS
 
 			UpgradeHelpers.DB.TransactionManager.SetCommandTransaction(objcommand);
 			ADORecordSetHelper rs = ADORecordSetHelper.Open(objcommand, "");
-			result = rs.RecordCount > 0;
+			bool result = rs.RecordCount > 0;
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;
@@ -961,7 +948,7 @@ namespace TailwindPOS
 
 		internal static bool ValidateUserPasswordAdmin(string UserID, string password)
 		{
-			bool result = false;
+			_ = false;
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 
@@ -988,7 +975,7 @@ namespace TailwindPOS
 
 			UpgradeHelpers.DB.TransactionManager.SetCommandTransaction(objcommand);
 			ADORecordSetHelper rs = ADORecordSetHelper.Open(objcommand, "");
-			result = rs.RecordCount > 0;
+			bool result = rs.RecordCount > 0;
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;

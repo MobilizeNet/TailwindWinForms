@@ -930,10 +930,8 @@ namespace TailwindPOS
 			this.commandButtonHelper1.SetStyle(this.cb_Period, 1);
 			this.ResumeLayout(false);
 		}
-		void ReLoadForm(bool addEvents)
-		{
-			UserControl_Initialize();
-		}
+		void ReLoadForm(bool addEvents) => UserControl_Initialize();
+
 		#endregion
 		#region "Upgrade Support"
 		public sealed class OnEnterEventEventArgs

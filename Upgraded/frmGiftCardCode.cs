@@ -45,13 +45,7 @@ namespace TailwindPOS
 		}
 
 
-		public string Code
-		{
-			get
-			{
-				return txtCode.Text;
-			}
-		}
+		public string Code => txtCode.Text;
 
 
 
@@ -62,10 +56,8 @@ namespace TailwindPOS
 			this.Hide();
 		}
 
-		private void cbOK_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Hide();
-		}
+		private void cbOK_Click(Object eventSender, EventArgs eventArgs) => this.Hide();
+
 		private void Form_Closed(Object eventSender, EventArgs eventArgs)
 		{
 		}

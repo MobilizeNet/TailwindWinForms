@@ -37,10 +37,7 @@ namespace TailwindPOS
 		[Browsable(true)]
 		public bool ShowChars
 		{
-			get
-			{
-				return m_ShowChars;
-			}
+			get => m_ShowChars;
 			set
 			{
 				m_ShowChars = value;
@@ -60,14 +57,8 @@ namespace TailwindPOS
 		[Browsable(true)]
 		public bool ShowEnter
 		{
-			get
-			{
-				return cb_Enter.Visible;
-			}
-			set
-			{
-				cb_Enter.Visible = value;
-			}
+			get => cb_Enter.Visible;
+			set => cb_Enter.Visible = value;
 		}
 
 
@@ -75,14 +66,8 @@ namespace TailwindPOS
 		[Browsable(true)]
 		public bool ShowValue
 		{
-			get
-			{
-				return txtAmount.Visible;
-			}
-			set
-			{
-				txtAmount.Visible = value;
-			}
+			get => txtAmount.Visible;
+			set => txtAmount.Visible = value;
 		}
 
 
@@ -90,14 +75,8 @@ namespace TailwindPOS
 		[Browsable(true)]
 		public string Value
 		{
-			get
-			{
-				return txtAmount.Text;
-			}
-			set
-			{
-				txtAmount.Text = value;
-			}
+			get => txtAmount.Text;
+			set => txtAmount.Text = value;
 		}
 
 
@@ -132,7 +111,7 @@ namespace TailwindPOS
 
 		private void cb_Number00_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "00";
+			txtAmount.Text = $"{txtAmount.Text}00";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("00"));
@@ -141,7 +120,7 @@ namespace TailwindPOS
 
 		private void cb_Number0_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "0";
+			txtAmount.Text = $"{txtAmount.Text}0";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("0"));
@@ -150,7 +129,7 @@ namespace TailwindPOS
 
 		private void cb_Number1_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "1";
+			txtAmount.Text = $"{txtAmount.Text}1";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("1"));
@@ -159,7 +138,7 @@ namespace TailwindPOS
 
 		private void cb_Number2_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "2";
+			txtAmount.Text = $"{txtAmount.Text}2";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("2"));
@@ -168,7 +147,7 @@ namespace TailwindPOS
 
 		private void cb_Number3_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "3";
+			txtAmount.Text = $"{txtAmount.Text}3";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("3"));
@@ -177,7 +156,7 @@ namespace TailwindPOS
 
 		private void cb_Number4_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "4";
+			txtAmount.Text = $"{txtAmount.Text}4";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("4"));
@@ -186,7 +165,7 @@ namespace TailwindPOS
 
 		private void cb_Number5_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "5";
+			txtAmount.Text = $"{txtAmount.Text}5";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("5"));
@@ -195,7 +174,7 @@ namespace TailwindPOS
 
 		private void cb_Number6_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "6";
+			txtAmount.Text = $"{txtAmount.Text}6";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("6"));
@@ -204,7 +183,7 @@ namespace TailwindPOS
 
 		private void cb_Number7_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "7";
+			txtAmount.Text = $"{txtAmount.Text}7";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("7"));
@@ -213,7 +192,7 @@ namespace TailwindPOS
 
 		private void cb_Number8_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "8";
+			txtAmount.Text = $"{txtAmount.Text}8";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("8"));
@@ -222,7 +201,7 @@ namespace TailwindPOS
 
 		private void cb_Number9_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + "9";
+			txtAmount.Text = $"{txtAmount.Text}9";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("9"));
@@ -231,22 +210,18 @@ namespace TailwindPOS
 
 		private void cb_Period_Click(Object eventSender, EventArgs eventArgs)
 		{
-			txtAmount.Text = txtAmount.Text + ".";
+			txtAmount.Text = $"{txtAmount.Text}.";
 			if (OnNumber != null)
 			{
 				OnNumber(this, new OnNumberEventArgs("."));
 			}
 		}
 
-		public void HighlightValueOff()
-		{
-			txtAmount.BackColor = Color.White;
-		}
+		public void HighlightValueOff() => txtAmount.BackColor = Color.White;
 
-		public void HighlightValueOn()
-		{
-			txtAmount.BackColor = Color.Yellow;
-		}
+
+		public void HighlightValueOn() => txtAmount.BackColor = Color.Yellow;
+
 
 		private void txtAmount_KeyPress(Object eventSender, KeyPressEventArgs eventArgs)
 		{

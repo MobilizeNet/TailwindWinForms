@@ -308,6 +308,7 @@ namespace TailwindPOS
 			this.lblCompany.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblCompany.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblCompany.Location = new System.Drawing.Point(40, 144);
+			this.lblCompany.MinimumSize = new System.Drawing.Size(145, 65);
 			this.lblCompany.Name = "lblCompany";
 			this.lblCompany.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblCompany.Size = new System.Drawing.Size(145, 65);
@@ -322,6 +323,7 @@ namespace TailwindPOS
 			this.lblCounty.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblCounty.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblCounty.Location = new System.Drawing.Point(40, 520);
+			this.lblCounty.MinimumSize = new System.Drawing.Size(217, 65);
 			this.lblCounty.Name = "lblCounty";
 			this.lblCounty.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblCounty.Size = new System.Drawing.Size(217, 65);
@@ -336,6 +338,7 @@ namespace TailwindPOS
 			this.lblCity.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblCity.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblCity.Location = new System.Drawing.Point(344, 432);
+			this.lblCity.MinimumSize = new System.Drawing.Size(217, 65);
 			this.lblCity.Name = "lblCity";
 			this.lblCity.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblCity.Size = new System.Drawing.Size(217, 65);
@@ -350,6 +353,7 @@ namespace TailwindPOS
 			this.lblState.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblState.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblState.Location = new System.Drawing.Point(40, 432);
+			this.lblState.MinimumSize = new System.Drawing.Size(225, 81);
 			this.lblState.Name = "lblState";
 			this.lblState.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblState.Size = new System.Drawing.Size(225, 81);
@@ -364,6 +368,7 @@ namespace TailwindPOS
 			this.lblZipCode.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblZipCode.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblZipCode.Location = new System.Drawing.Point(736, 432);
+			this.lblZipCode.MinimumSize = new System.Drawing.Size(233, 73);
 			this.lblZipCode.Name = "lblZipCode";
 			this.lblZipCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblZipCode.Size = new System.Drawing.Size(233, 73);
@@ -378,6 +383,7 @@ namespace TailwindPOS
 			this.lblStreetAdress2.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblStreetAdress2.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblStreetAdress2.Location = new System.Drawing.Point(40, 360);
+			this.lblStreetAdress2.MinimumSize = new System.Drawing.Size(233, 73);
 			this.lblStreetAdress2.Name = "lblStreetAdress2";
 			this.lblStreetAdress2.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblStreetAdress2.Size = new System.Drawing.Size(233, 73);
@@ -392,6 +398,7 @@ namespace TailwindPOS
 			this.lblStreetAddress1.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblStreetAddress1.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblStreetAddress1.Location = new System.Drawing.Point(40, 288);
+			this.lblStreetAddress1.MinimumSize = new System.Drawing.Size(233, 57);
 			this.lblStreetAddress1.Name = "lblStreetAddress1";
 			this.lblStreetAddress1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblStreetAddress1.Size = new System.Drawing.Size(233, 57);
@@ -406,6 +413,7 @@ namespace TailwindPOS
 			this.lblPhone.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPhone.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblPhone.Location = new System.Drawing.Point(40, 216);
+			this.lblPhone.MinimumSize = new System.Drawing.Size(185, 57);
 			this.lblPhone.Name = "lblPhone";
 			this.lblPhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPhone.Size = new System.Drawing.Size(185, 57);
@@ -420,6 +428,7 @@ namespace TailwindPOS
 			this.lblEmail.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblEmail.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblEmail.Location = new System.Drawing.Point(40, 80);
+			this.lblEmail.MinimumSize = new System.Drawing.Size(185, 57);
 			this.lblEmail.Name = "lblEmail";
 			this.lblEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblEmail.Size = new System.Drawing.Size(185, 57);
@@ -434,6 +443,7 @@ namespace TailwindPOS
 			this.lblLastName.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblLastName.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblLastName.Location = new System.Drawing.Point(576, 16);
+			this.lblLastName.MinimumSize = new System.Drawing.Size(185, 57);
 			this.lblLastName.Name = "lblLastName";
 			this.lblLastName.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblLastName.Size = new System.Drawing.Size(185, 57);
@@ -448,6 +458,7 @@ namespace TailwindPOS
 			this.lblFirstName.Font = new System.Drawing.Font("Arial", 20.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblFirstName.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblFirstName.Location = new System.Drawing.Point(40, 16);
+			this.lblFirstName.MinimumSize = new System.Drawing.Size(201, 49);
 			this.lblFirstName.Name = "lblFirstName";
 			this.lblFirstName.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblFirstName.Size = new System.Drawing.Size(201, 49);
@@ -457,7 +468,7 @@ namespace TailwindPOS
 			// frmCustAdd
 			// 
 			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(17, 33);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(1264, 693);

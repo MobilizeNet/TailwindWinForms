@@ -51,26 +51,14 @@ namespace TailwindPOS
 		decimal m_paidSoFar = 0;
 		bool m_paymentDone = false;
 
-		public bool PaymentDone
-		{
-			get
-			{
-				return m_paymentDone;
-			}
-		}
+		public bool PaymentDone => m_paymentDone;
 
 
 
 		public decimal TransactionAmount
 		{
-			get
-			{
-				return m_transactionAmount;
-			}
-			set
-			{
-				m_transactionAmount = value;
-			}
+			get => m_transactionAmount;
+			set => m_transactionAmount = value;
 		}
 
 
@@ -83,7 +71,7 @@ namespace TailwindPOS
 				return;
 			}
 
-			decimal money = Decimal.Parse(amount, NumberStyles.Currency | NumberStyles.AllowExponent);
+			_ = Decimal.Parse(amount, NumberStyles.Currency | NumberStyles.AllowExponent);
 			int lastRow = fgPayments.RowsCount;
 			fgPayments.RowsCount++;
 			fgPayments[lastRow, 0].Value = paymentType;
@@ -92,15 +80,11 @@ namespace TailwindPOS
 			UpdateTotals();
 		}
 
-		private void cbCash_Click(Object eventSender, EventArgs eventArgs)
-		{
-			AddPayment(ucNumbers.Value, "Cash", "");
-		}
+		private void cbCash_Click(Object eventSender, EventArgs eventArgs) => AddPayment(ucNumbers.Value, "Cash", "");
 
-		private void cbCheck_Click(Object eventSender, EventArgs eventArgs)
-		{
-			AddPayment(ucNumbers.Value, "Check", "");
-		}
+
+		private void cbCheck_Click(Object eventSender, EventArgs eventArgs) => AddPayment(ucNumbers.Value, "Check", "");
+
 
 		private void cbCreditCard_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -149,7 +133,7 @@ namespace TailwindPOS
 			this.Hide();
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load(Object eventSender, EventArgs eventArgs)
 		{
 			gbPayments.Visible = true;

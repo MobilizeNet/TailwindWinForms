@@ -50,7 +50,7 @@ namespace TailwindPOS
 		{
 			get
 			{
-				int SaveCustomerID = m_savedCustomerID;
+				_ = m_savedCustomerID;
 				return false;
 			}
 		}
@@ -60,16 +60,14 @@ namespace TailwindPOS
 		{
 			get
 			{
-				bool SaveCustomer = m_savedCustomer;
+				_ = m_savedCustomer;
 				return false;
 			}
 		}
 
 
-		private void cbClose_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Hide();
-		}
+		private void cbClose_Click(Object eventSender, EventArgs eventArgs) => this.Hide();
+
 
 		private void cbSave_Click(Object eventSender, EventArgs eventArgs)
 		{

@@ -72,6 +72,7 @@ namespace TailwindPOS
 			this.lblPauseMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPauseMessage.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblPauseMessage.Location = new System.Drawing.Point(56, 32);
+			this.lblPauseMessage.MinimumSize = new System.Drawing.Size(713, 73);
 			this.lblPauseMessage.Name = "lblPauseMessage";
 			this.lblPauseMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPauseMessage.Size = new System.Drawing.Size(713, 73);
@@ -82,7 +83,7 @@ namespace TailwindPOS
 			// frmPause
 			// 
 			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(19, 37);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Window;
 			this.ClientSize = new System.Drawing.Size(844, 334);

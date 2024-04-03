@@ -48,14 +48,14 @@ namespace TailwindPOS
 		private void cbReturn_Click(Object eventSender, EventArgs eventArgs)
 		{
 			decimal MINIMUM_CASH = 0;
-			decimal Total = 0;
+			_ = 0;
 			frmCashCount cash = null;
 			int ShiftID = 0;
 			if (MainModule.CurrentShift.UserID == 0)
 			{
 				// And we need a shift
 				MessageBox.Show("You are starting your shift, please count cash on drawer", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()));
-				Total = 0;
+				decimal Total = 0;
 				while (Total < 300)
 				{
 					cash = new frmCashCount();
@@ -76,7 +76,7 @@ namespace TailwindPOS
 					}
 					else
 					{
-						MessageBox.Show("You need to have a minimum of " + MINIMUM_CASH.ToString() + " to Start a Shift", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()));
+						MessageBox.Show($"You need to have a minimum of {MINIMUM_CASH.ToString()} to Start a Shift", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()));
 					}
 				}
 			}
@@ -86,7 +86,7 @@ namespace TailwindPOS
 			}
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load event and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load(Object eventSender, EventArgs eventArgs)
 		{
 			int CurrentUserID = 0;

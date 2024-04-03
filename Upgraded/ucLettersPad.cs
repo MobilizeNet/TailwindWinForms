@@ -32,14 +32,8 @@ namespace TailwindPOS
 		[Browsable(true)]
 		public string Value
 		{
-			get
-			{
-				return txtValue.Text;
-			}
-			set
-			{
-				txtValue.Text = value;
-			}
+			get => txtValue.Text;
+			set => txtValue.Text = value;
 		}
 
 
@@ -48,10 +42,7 @@ namespace TailwindPOS
 		[Browsable(true)]
 		public bool ShowChars
 		{
-			get
-			{
-				return m_ShowChars;
-			}
+			get => m_ShowChars;
 			set
 			{
 				m_ShowChars = value;
@@ -76,63 +67,35 @@ namespace TailwindPOS
 			}
 		}
 
-		private void cb_Number1_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "1";
-		}
+		private void cb_Number1_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}1";
 
-		private void cb_Number2_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "2";
-		}
 
-		private void cb_Number3_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "3";
+		private void cb_Number2_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}2";
 
-		}
 
-		private void cb_Number4_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "4";
+		private void cb_Number3_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}3";
 
-		}
 
-		private void cb_Number5_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "5";
+		private void cb_Number4_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}4";
 
-		}
 
-		private void cb_Number6_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "6";
+		private void cb_Number5_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}5";
 
-		}
 
-		private void cb_Number7_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "7";
+		private void cb_Number6_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}6";
 
-		}
 
-		private void cb_Number8_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "8";
+		private void cb_Number7_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}7";
 
-		}
 
-		private void cb_Number9_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "9";
+		private void cb_Number8_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}8";
 
-		}
 
-		private void cb_Period_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + ".";
+		private void cb_Number9_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}9";
 
-		}
+
+		private void cb_Period_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}.";
+
 
 
 
@@ -166,10 +129,8 @@ namespace TailwindPOS
 			cbLetterZ.Text = GetLetter("Z");
 		}
 
-		private string GetLetter(string X)
-		{
-			return (m_capstate) ? X.ToUpper() : X.ToLower();
-		}
+		private string GetLetter(string X) => (m_capstate) ? X.ToUpper() : X.ToLower();
+
 
 		private void cbAllCaps_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -189,11 +150,8 @@ namespace TailwindPOS
 			ChangeCase();
 		}
 
-		private void cbAt_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("@");
+		private void cbAt_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("@")}";
 
-		}
 
 		private void cbDelete_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -203,168 +161,100 @@ namespace TailwindPOS
 			}
 		}
 
-		private void cbLetterA_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("A");
+		private void cbLetterA_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("A")}";
 
-		}
 
-		private void cbLetterB_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("B");
+		private void cbLetterB_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("B")}";
 
-		}
 
-		private void cbLetterC_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("C");
+		private void cbLetterC_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("C")}";
 
-		}
 
-		private void cbLetterD_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("D");
+		private void cbLetterD_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("D")}";
 
-		}
 
-		private void cbLetterE_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("E");
+		private void cbLetterE_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("E")}";
 
-		}
 
-		private void cbLetterF_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("F");
+		private void cbLetterF_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("F")}";
 
-		}
 
-		private void cbLetterG_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("G");
+		private void cbLetterG_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("G")}";
 
-		}
 
-		private void cbLetterH_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("H");
+		private void cbLetterH_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("H")}";
 
-		}
 
-		private void cbLetterI_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("I");
-		}
+		private void cbLetterI_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("I")}";
 
-		private void cbLetterJ_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("J");
-		}
 
-		private void cbLetterK_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("K");
-		}
+		private void cbLetterJ_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("J")}";
 
-		private void cbLetterL_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("L");
-		}
 
-		private void cbLetterM_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("M");
-		}
+		private void cbLetterK_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("K")}";
 
-		private void cbLetterN_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("N");
-		}
 
-		private void cbLetterO_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("O");
-		}
+		private void cbLetterL_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("L")}";
 
-		private void cbLetterP_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("P");
-		}
 
-		private void cbLetterQ_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("Q");
-		}
+		private void cbLetterM_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("M")}";
 
-		private void cbLetterR_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("R");
-		}
 
-		private void cbLetterS_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("S");
-		}
+		private void cbLetterN_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("N")}";
 
-		private void cbLetterT_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("T");
-		}
 
-		private void cbLetterU_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("U");
-		}
+		private void cbLetterO_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("O")}";
 
-		private void cbLetterV_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("V");
-		}
 
-		private void cbLetterW_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("W");
-		}
+		private void cbLetterP_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("P")}";
 
-		private void cbLetterX_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("X");
-		}
 
-		private void cbLetterY_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("Y");
-		}
+		private void cbLetterQ_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("Q")}";
 
-		private void cbLetterZ_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + GetLetter("Z");
-		}
 
-		private void cbMinus_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "-";
-		}
+		private void cbLetterR_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("R")}";
 
-		private void cbSpace_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + " ";
-		}
 
-		private void cbUnderscore_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtValue.Text = txtValue.Text + "_";
-		}
+		private void cbLetterS_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("S")}";
 
-		//UPGRADE_NOTE: (7001) The following declaration (Command1_Click) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
+
+		private void cbLetterT_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("T")}";
+
+
+		private void cbLetterU_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("U")}";
+
+
+		private void cbLetterV_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("V")}";
+
+
+		private void cbLetterW_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("W")}";
+
+
+		private void cbLetterX_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("X")}";
+
+
+		private void cbLetterY_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("Y")}";
+
+
+		private void cbLetterZ_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}{GetLetter("Z")}";
+
+
+		private void cbMinus_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}-";
+
+
+		private void cbSpace_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text} ";
+
+
+		private void cbUnderscore_Click(Object eventSender, EventArgs eventArgs) => txtValue.Text = $"{txtValue.Text}_";
+
+
+		//UPGRADE_NOTE: (7001) The following declaration (Command1_Click) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
 		//private void Command1_Click()
 		//{
 			//
 		//}
 
-		private void UserControl_Initialize()
-		{
-			m_capstate = true;
-		}
+		private void UserControl_Initialize() => m_capstate = true;
+
 	}
 }

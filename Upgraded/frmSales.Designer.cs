@@ -187,6 +187,7 @@ namespace TailwindPOS
 			this.lblCustomerInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblCustomerInfo.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblCustomerInfo.Location = new System.Drawing.Point(24, 40);
+			this.lblCustomerInfo.MinimumSize = new System.Drawing.Size(337, 49);
 			this.lblCustomerInfo.Name = "lblCustomerInfo";
 			this.lblCustomerInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblCustomerInfo.Size = new System.Drawing.Size(337, 49);
@@ -333,6 +334,7 @@ namespace TailwindPOS
 			this.lblTotal.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTotal.Location = new System.Drawing.Point(168, 128);
+			this.lblTotal.MinimumSize = new System.Drawing.Size(129, 33);
 			this.lblTotal.Name = "lblTotal";
 			this.lblTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTotal.Size = new System.Drawing.Size(129, 33);
@@ -348,6 +350,7 @@ namespace TailwindPOS
 			this.lblTax.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTax.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTax.Location = new System.Drawing.Point(168, 80);
+			this.lblTax.MinimumSize = new System.Drawing.Size(129, 33);
 			this.lblTax.Name = "lblTax";
 			this.lblTax.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTax.Size = new System.Drawing.Size(129, 33);
@@ -363,6 +366,7 @@ namespace TailwindPOS
 			this.lblSubTotal.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblSubTotal.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblSubTotal.Location = new System.Drawing.Point(168, 32);
+			this.lblSubTotal.MinimumSize = new System.Drawing.Size(129, 33);
 			this.lblSubTotal.Name = "lblSubTotal";
 			this.lblSubTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblSubTotal.Size = new System.Drawing.Size(129, 33);
@@ -378,6 +382,7 @@ namespace TailwindPOS
 			this.lblTotalTitle.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTotalTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTotalTitle.Location = new System.Drawing.Point(16, 128);
+			this.lblTotalTitle.MinimumSize = new System.Drawing.Size(97, 41);
 			this.lblTotalTitle.Name = "lblTotalTitle";
 			this.lblTotalTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTotalTitle.Size = new System.Drawing.Size(97, 41);
@@ -392,6 +397,7 @@ namespace TailwindPOS
 			this.lblTaxTitle.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTaxTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblTaxTitle.Location = new System.Drawing.Point(16, 80);
+			this.lblTaxTitle.MinimumSize = new System.Drawing.Size(81, 41);
 			this.lblTaxTitle.Name = "lblTaxTitle";
 			this.lblTaxTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTaxTitle.Size = new System.Drawing.Size(81, 41);
@@ -406,6 +412,7 @@ namespace TailwindPOS
 			this.lblSubTotalTitle.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblSubTotalTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblSubTotalTitle.Location = new System.Drawing.Point(16, 32);
+			this.lblSubTotalTitle.MinimumSize = new System.Drawing.Size(129, 33);
 			this.lblSubTotalTitle.Name = "lblSubTotalTitle";
 			this.lblSubTotalTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblSubTotalTitle.Size = new System.Drawing.Size(129, 33);
@@ -438,6 +445,7 @@ namespace TailwindPOS
 			this.lblPOS.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPOS.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblPOS.Location = new System.Drawing.Point(752, 768);
+			this.lblPOS.MinimumSize = new System.Drawing.Size(153, 49);
 			this.lblPOS.Name = "lblPOS";
 			this.lblPOS.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPOS.Size = new System.Drawing.Size(153, 49);
@@ -452,6 +460,7 @@ namespace TailwindPOS
 			this.lblPOSTitle.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPOSTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblPOSTitle.Location = new System.Drawing.Point(752, 704);
+			this.lblPOSTitle.MinimumSize = new System.Drawing.Size(105, 57);
 			this.lblPOSTitle.Name = "lblPOSTitle";
 			this.lblPOSTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPOSTitle.Size = new System.Drawing.Size(105, 57);
@@ -466,6 +475,7 @@ namespace TailwindPOS
 			this.lblCashier.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblCashier.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblCashier.Location = new System.Drawing.Point(960, 632);
+			this.lblCashier.MinimumSize = new System.Drawing.Size(185, 57);
 			this.lblCashier.Name = "lblCashier";
 			this.lblCashier.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblCashier.Size = new System.Drawing.Size(185, 57);
@@ -480,6 +490,7 @@ namespace TailwindPOS
 			this.lblCashierTitle.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblCashierTitle.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
 			this.lblCashierTitle.Location = new System.Drawing.Point(752, 632);
+			this.lblCashierTitle.MinimumSize = new System.Drawing.Size(145, 49);
 			this.lblCashierTitle.Name = "lblCashierTitle";
 			this.lblCashierTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblCashierTitle.Size = new System.Drawing.Size(145, 49);
