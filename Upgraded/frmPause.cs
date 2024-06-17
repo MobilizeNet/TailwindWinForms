@@ -48,14 +48,14 @@ namespace TailwindPOS
 		private void cbReturn_Click(Object eventSender, EventArgs eventArgs)
 		{
 			decimal MINIMUM_CASH = 0;
-			_ = 0;
+			decimal Total = 0;
 			frmCashCount cash = null;
 			int ShiftID = 0;
 			if (MainModule.CurrentShift.UserID == 0)
 			{
 				// And we need a shift
 				MessageBox.Show("You are starting your shift, please count cash on drawer", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()));
-				decimal Total = 0;
+				Total = 0;
 				while (Total < 300)
 				{
 					cash = new frmCashCount();

@@ -71,7 +71,7 @@ namespace TailwindPOS
 				return;
 			}
 
-			_ = Decimal.Parse(amount, NumberStyles.Currency | NumberStyles.AllowExponent);
+			decimal money = Decimal.Parse(amount, NumberStyles.Currency | NumberStyles.AllowExponent);
 			int lastRow = fgPayments.RowsCount;
 			fgPayments.RowsCount++;
 			fgPayments[lastRow, 0].Value = paymentType;

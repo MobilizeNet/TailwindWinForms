@@ -115,9 +115,9 @@ namespace TailwindPOS
 
 		}
 
-		private void ucLettersPad_OnEnterEvent(Object Sender, ucLettersPad.OnEnterEventEventArgs e)
+		private void ucLettersPad_OnEnterEvent(Object Sender, ucLettersPad.OnEnterEventEventArgs eventArgs)
 		{
-			_ = e.Text_Renamed;
+			string Text_Renamed = eventArgs.Text_Renamed;
 			SearchCustomer(ucLettersPad.Value);
 			ucLettersPad.Value = "";
 		}

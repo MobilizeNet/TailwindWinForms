@@ -50,7 +50,7 @@ namespace TailwindPOS
 		{
 			get
 			{
-				_ = m_savedCustomerID;
+				int SaveCustomerID = m_savedCustomerID;
 				return false;
 			}
 		}
@@ -60,7 +60,7 @@ namespace TailwindPOS
 		{
 			get
 			{
-				_ = m_savedCustomer;
+				bool SaveCustomer = m_savedCustomer;
 				return false;
 			}
 		}

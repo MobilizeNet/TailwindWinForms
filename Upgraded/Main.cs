@@ -546,7 +546,7 @@ namespace TailwindPOS
 
 		internal static int RegisterBreakStart(int POSID, int ShiftID, ref System.DateTime StartTime)
 		{
-			_ = 0;
+			int result = 0;
 			StartTime = DateTime.Parse(DateTimeHelper.ToString(StartTime));
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
@@ -582,7 +582,7 @@ namespace TailwindPOS
 			objcommand.ExecuteNonQuery();
 
 			ADORecordSetHelper rs = ADORecordSetHelper.Open("select @@identity", conn, "");
-			int result = Convert.ToInt32(rs[0]);
+			result = Convert.ToInt32(rs[0]);
 
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
@@ -650,7 +650,7 @@ namespace TailwindPOS
 
 		internal static double SaveNewCustomer(string FirstName, string LastName, string Email, string Company, string Phone, string StreetAddress1, string StreetAddress2, string State, string City, string ZipCode, string County)
 		{
-			_ = 0;
+			double result = 0;
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 			objcommand.Connection = conn;
@@ -748,7 +748,7 @@ namespace TailwindPOS
 			UpgradeHelpers.DB.TransactionManager.SetCommandTransaction(objcommand);
 			objcommand.ExecuteNonQuery();
 			ADORecordSetHelper rs = ADORecordSetHelper.Open("select @@identity", conn, "");
-			double result = Convert.ToDouble(rs[0]);
+			result = Convert.ToDouble(rs[0]);
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;
@@ -860,7 +860,7 @@ namespace TailwindPOS
 
 		internal static int StartShiftWithAmount(int POSID, int UserID, ref System.DateTime StartShift, decimal StartCash)
 		{
-			_ = 0;
+			int result = 0;
 			StartShift = DateTime.Parse(DateTimeHelper.ToString(StartShift));
 			DbConnection conn = OpenConnection();
 			// We need to insert the shift information
@@ -905,7 +905,7 @@ namespace TailwindPOS
 			command.ExecuteNonQuery();
 
 			ADORecordSetHelper rs = ADORecordSetHelper.Open("select @@identity", conn, "");
-			int result = Convert.ToInt32(rs[0]);
+			result = Convert.ToInt32(rs[0]);
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;
@@ -913,7 +913,7 @@ namespace TailwindPOS
 
 		internal static bool ValidateUserPassword(string UserID, string password)
 		{
-			_ = false;
+			bool result = false;
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 
@@ -940,7 +940,7 @@ namespace TailwindPOS
 
 			UpgradeHelpers.DB.TransactionManager.SetCommandTransaction(objcommand);
 			ADORecordSetHelper rs = ADORecordSetHelper.Open(objcommand, "");
-			bool result = rs.RecordCount > 0;
+			result = rs.RecordCount > 0;
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;
@@ -948,7 +948,7 @@ namespace TailwindPOS
 
 		internal static bool ValidateUserPasswordAdmin(string UserID, string password)
 		{
-			_ = false;
+			bool result = false;
 			DbConnection conn = OpenConnection();
 			DbCommand objcommand = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateCommand();
 
@@ -975,7 +975,7 @@ namespace TailwindPOS
 
 			UpgradeHelpers.DB.TransactionManager.SetCommandTransaction(objcommand);
 			ADORecordSetHelper rs = ADORecordSetHelper.Open(objcommand, "");
-			bool result = rs.RecordCount > 0;
+			result = rs.RecordCount > 0;
 			UpgradeHelpers.DB.TransactionManager.DeEnlist(conn);
 			conn.Close();
 			return result;

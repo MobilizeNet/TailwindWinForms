@@ -173,12 +173,12 @@ namespace TailwindPOS
 		private void txtTwenties_Leave(Object eventSender, EventArgs eventArgs) => Highlight(txtTwenties);
 
 
-		private void ucNumbers_OnBack(Object Sender, EventArgs e)
+		private void ucNumbers_OnBack(Object Sender, EventArgs eventArgs)
 		{
-			_ = "";
+			string val = "";
 			if (m_LastTextBox != null)
 			{
-				string val = m_LastTextBox.Text.Trim();
+				val = m_LastTextBox.Text.Trim();
 				if (val == "0")
 				{
 					m_LastTextBox.Text = "0";
@@ -191,13 +191,13 @@ namespace TailwindPOS
 			UpdateTotals();
 		}
 
-		private void ucNumbers_OnNumber(Object Sender, ucNumbersPad.OnNumberEventArgs e)
+		private void ucNumbers_OnNumber(Object Sender, ucNumbersPad.OnNumberEventArgs eventArgs)
 		{
-			string Number = e.Number;
-			_ = "";
+			string Number = eventArgs.Number;
+			string val = "";
 			if (m_LastTextBox != null)
 			{
-				string val = m_LastTextBox.Text.Trim();
+				val = m_LastTextBox.Text.Trim();
 				if (val == "0")
 				{
 					m_LastTextBox.Text = Number;
@@ -225,10 +225,10 @@ namespace TailwindPOS
 		public void ExitTextBox(TextBox txt)
 		{
 			string contents = txt.Text;
-			_ = 0;
+			int newValue = 0;
 			try
 			{
-				int newValue = Convert.ToInt32(Double.Parse(contents));
+				newValue = Convert.ToInt32(Double.Parse(contents));
 				txt.Text = newValue.ToString();
 				UpdateTotals();
 			}
