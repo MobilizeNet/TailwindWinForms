@@ -6,16 +6,16 @@
     <Setting Name="ProjectName" Value="TailwindPOS" />
     <Setting Name="OutputName" Value="TailwindPOS.csproj" />
     <Setting Name="OutputDir" Value="C:\A1\_work\out\Upgraded\" />
-    <Setting Name="ProjectPath" Value="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\TailwindPOS.vbp" />
+    <Setting Name="ProjectPath" Value="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\TailwindPOS.vbp" />
     <Setting Name="MigrateProjectTo" Value="WinExe" />
   </Settings>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\ucNumbersPad.ctl" NewPath="C:\A1\_work\out\Upgraded\ucNumbersPad.cs" FileType="User Control" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\ucNumbersPad.ctl" NewPath="C:\A1\_work\out\Upgraded\ucNumbersPad.cs" FileType="User Control" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="ucNumbersPad" ObjectType="UserControl" PME="ScaleHeight" Qty="1">UserControl property ucNumbersPad.ScaleHeight was not upgraded.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="ucNumbersPad" ObjectType="UserControl" PME="ScaleWidth" Qty="1">UserControl property ucNumbersPad.ScaleWidth was not upgraded.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmSales.frm" NewPath="C:\A1\_work\out\Upgraded\frmSales.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmSales.frm" NewPath="C:\A1\_work\out\Upgraded\frmSales.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="cbRePrint" ObjectType="CommandButton" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2045" ObjectName="cbQuantity" ObjectType="CommandButton" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
@@ -37,12 +37,12 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load event and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmCashCount.frm" NewPath="C:\A1\_work\out\Upgraded\frmCashCount.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmCashCount.frm" NewPath="C:\A1\_work\out\Upgraded\frmCashCount.cs" FileType="Form" Upgraded="True">
     <Section Name="Form_Load">
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load event and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmPause.frm" NewPath="C:\A1\_work\out\Upgraded\frmPause.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmPause.frm" NewPath="C:\A1\_work\out\Upgraded\frmPause.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="frmPause" ObjectType="Form" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
     </Section>
@@ -50,13 +50,13 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load event and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\ucLettersPad.ctl" NewPath="C:\A1\_work\out\Upgraded\ucLettersPad.cs" FileType="User Control" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\ucLettersPad.ctl" NewPath="C:\A1\_work\out\Upgraded\ucLettersPad.cs" FileType="User Control" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="ucLettersPad" ObjectType="UserControl" PME="ScaleHeight" Qty="1">UserControl property ucLettersPad.ScaleHeight was not upgraded.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="ucLettersPad" ObjectType="UserControl" PME="ScaleWidth" Qty="1">UserControl property ucLettersPad.ScaleWidth was not upgraded.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\Main.bas" NewPath="C:\A1\_work\out\Upgraded\Main.cs" FileType="Module" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\Main.bas" NewPath="C:\A1\_work\out\Upgraded\Main.cs" FileType="Module" Upgraded="True">
     <Section Name="Main">
       <Issue Type="Runtime" Number="1047" Qty="1">Application will terminate when Sub Main() finishes.</Issue>
     </Section>
@@ -64,7 +64,7 @@
       <Issue Type="ToDo" Number="7010" ObjectName="conn" ObjectType="ADODB.Connection" PME="Open" Qty="1">The connection string must be verified to fullfill the .NET data provider connection string requirements.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmSearchCust.frm" NewPath="C:\A1\_work\out\Upgraded\frmSearchCust.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmSearchCust.frm" NewPath="C:\A1\_work\out\Upgraded\frmSearchCust.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="cbClose" ObjectType="CommandButton" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2045" ObjectName="fgCustomers" ObjectType="MSFlexGrid" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
@@ -76,17 +76,17 @@
       <Issue Type="Runtime" Number="1049" ObjectName="Information" ObjectType="Boolean" PME="IsNull" Qty="5">Use of Null/IsNull() detected.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmCustAdd.frm" NewPath="C:\A1\_work\out\Upgraded\frmCustAdd.cs" FileType="Form" Upgraded="True" />
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmPayment.frm" NewPath="C:\A1\_work\out\Upgraded\frmPayment.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmCustAdd.frm" NewPath="C:\A1\_work\out\Upgraded\frmCustAdd.cs" FileType="Form" Upgraded="True" />
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmPayment.frm" NewPath="C:\A1\_work\out\Upgraded\frmPayment.cs" FileType="Form" Upgraded="True">
     <Section Name="Form_Load">
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load event and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\Payment.cls" NewPath="C:\A1\_work\out\Upgraded\Payment.cs" FileType="Class Module" Upgraded="True" />
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\TicketItem.cls" NewPath="C:\A1\_work\out\Upgraded\TicketItem.cs" FileType="Class Module" Upgraded="True" />
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\POSSystems.cls" NewPath="C:\A1\_work\out\Upgraded\POSSystems.cs" FileType="Class Module" Upgraded="True" />
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\ShiftInfo.cls" NewPath="C:\A1\_work\out\Upgraded\ShiftInfo.cs" FileType="Class Module" Upgraded="True" />
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\Config.bas" NewPath="C:\A1\_work\out\Upgraded\Config.cs" FileType="Module" Upgraded="True" />
-  <File OldPath="C:\A1\_work\r3\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmGiftCardCode.frm" NewPath="C:\A1\_work\out\Upgraded\frmGiftCardCode.cs" FileType="Form" Upgraded="True" />
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\Payment.cls" NewPath="C:\A1\_work\out\Upgraded\Payment.cs" FileType="Class Module" Upgraded="True" />
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\TicketItem.cls" NewPath="C:\A1\_work\out\Upgraded\TicketItem.cs" FileType="Class Module" Upgraded="True" />
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\POSSystems.cls" NewPath="C:\A1\_work\out\Upgraded\POSSystems.cs" FileType="Class Module" Upgraded="True" />
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\ShiftInfo.cls" NewPath="C:\A1\_work\out\Upgraded\ShiftInfo.cs" FileType="Class Module" Upgraded="True" />
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\Config.bas" NewPath="C:\A1\_work\out\Upgraded\Config.cs" FileType="Module" Upgraded="True" />
+  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\TailwindTraders-PointOfSale\VB6\frmGiftCardCode.frm" NewPath="C:\A1\_work\out\Upgraded\frmGiftCardCode.cs" FileType="Form" Upgraded="True" />
 </UpgradeLog>
 
