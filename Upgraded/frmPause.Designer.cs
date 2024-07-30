@@ -40,71 +40,71 @@ namespace TailwindPOS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPause));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.cbReturn = new System.Windows.Forms.Button();
-			this.lblPauseMessage = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			cbReturn = new System.Windows.Forms.Button();
+			lblPauseMessage = new System.Windows.Forms.Label();
+			SuspendLayout();
+			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
 			// 
 			// cbReturn
 			// 
-			this.cbReturn.AllowDrop = true;
-			this.cbReturn.BackColor = System.Drawing.Color.FromArgb(97, 44, 67);
-			this.cbReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cbReturn.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.cbReturn.Location = new System.Drawing.Point(224, 160);
-			this.cbReturn.Name = "cbReturn";
-			this.cbReturn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.cbReturn.Size = new System.Drawing.Size(417, 81);
-			this.cbReturn.TabIndex = 1;
-			this.cbReturn.Text = "Return";
-			this.cbReturn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.cbReturn.UseVisualStyleBackColor = false;
-			this.cbReturn.Click += new System.EventHandler(this.cbReturn_Click);
+			cbReturn.AllowDrop = true;
+			cbReturn.BackColor = System.Drawing.Color.FromArgb(97, 44, 67);
+			cbReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cbReturn.ForeColor = System.Drawing.SystemColors.ControlText;
+			cbReturn.Location = new System.Drawing.Point(224, 160);
+			cbReturn.Name = "cbReturn";
+			cbReturn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			cbReturn.Size = new System.Drawing.Size(417, 81);
+			cbReturn.TabIndex = 1;
+			cbReturn.Text = "Return";
+			cbReturn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			cbReturn.UseVisualStyleBackColor = false;
+			cbReturn.Click += new System.EventHandler(cbReturn_Click);
 			// 
 			// lblPauseMessage
 			// 
-			this.lblPauseMessage.AllowDrop = true;
-			this.lblPauseMessage.BackColor = System.Drawing.Color.White;
-			this.lblPauseMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblPauseMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblPauseMessage.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblPauseMessage.Location = new System.Drawing.Point(56, 32);
-			this.lblPauseMessage.MinimumSize = new System.Drawing.Size(713, 73);
-			this.lblPauseMessage.Name = "lblPauseMessage";
-			this.lblPauseMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblPauseMessage.Size = new System.Drawing.Size(713, 73);
-			this.lblPauseMessage.TabIndex = 0;
-			this.lblPauseMessage.Text = "POS Paused";
-			this.lblPauseMessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			lblPauseMessage.AllowDrop = true;
+			lblPauseMessage.BackColor = System.Drawing.Color.White;
+			lblPauseMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblPauseMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblPauseMessage.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblPauseMessage.Location = new System.Drawing.Point(56, 32);
+			lblPauseMessage.MinimumSize = new System.Drawing.Size(713, 73);
+			lblPauseMessage.Name = "lblPauseMessage";
+			lblPauseMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblPauseMessage.Size = new System.Drawing.Size(713, 73);
+			lblPauseMessage.TabIndex = 0;
+			lblPauseMessage.Text = "POS Paused";
+			lblPauseMessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// frmPause
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Window;
-			this.ClientSize = new System.Drawing.Size(844, 334);
-			this.ControlBox = false;
-			this.Controls.Add(this.cbReturn);
-			this.Controls.Add(this.lblPauseMessage);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Location = new System.Drawing.Point(3, 26);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmPause";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Tailwind Point of Sale Paused";
-			this.commandButtonHelper1.SetStyle(this.cbReturn, 1);
-			this.Activated += new System.EventHandler(this.frmPause_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			this.Load += new System.EventHandler(this.Form_Load);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			BackColor = System.Drawing.SystemColors.Window;
+			ClientSize = new System.Drawing.Size(844, 334);
+			ControlBox = false;
+			Controls.Add(cbReturn);
+			Controls.Add(lblPauseMessage);
+			Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			Location = new System.Drawing.Point(3, 26);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmPause";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			ShowInTaskbar = false;
+			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			Text = "Tailwind Point of Sale Paused";
+			commandButtonHelper1.SetStyle(cbReturn, 1);
+			Activated += new System.EventHandler(frmPause_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			Load += new System.EventHandler(Form_Load);
+			ResumeLayout(false);
 		}
 		#endregion
 	}

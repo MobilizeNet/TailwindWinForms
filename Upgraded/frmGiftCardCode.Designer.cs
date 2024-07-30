@@ -42,106 +42,106 @@ namespace TailwindPOS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiftCardCode));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.cbCancel = new System.Windows.Forms.Button();
-			this.cbOK = new System.Windows.Forms.Button();
-			this.txtCode = new System.Windows.Forms.TextBox();
-			this.lblMessage = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			cbCancel = new System.Windows.Forms.Button();
+			cbOK = new System.Windows.Forms.Button();
+			txtCode = new System.Windows.Forms.TextBox();
+			lblMessage = new System.Windows.Forms.Label();
+			SuspendLayout();
+			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
 			// 
 			// cbCancel
 			// 
-			this.cbCancel.AllowDrop = true;
-			this.cbCancel.BackColor = System.Drawing.Color.White;
-			this.cbCancel.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cbCancel.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.cbCancel.Location = new System.Drawing.Point(360, 128);
-			this.cbCancel.Name = "cbCancel";
-			this.cbCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.cbCancel.Size = new System.Drawing.Size(265, 65);
-			this.cbCancel.TabIndex = 3;
-			this.cbCancel.Text = "Cancel";
-			this.cbCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.cbCancel.UseVisualStyleBackColor = false;
-			this.cbCancel.Click += new System.EventHandler(this.cbCancel_Click);
+			cbCancel.AllowDrop = true;
+			cbCancel.BackColor = System.Drawing.Color.White;
+			cbCancel.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cbCancel.ForeColor = System.Drawing.SystemColors.ControlText;
+			cbCancel.Location = new System.Drawing.Point(360, 128);
+			cbCancel.Name = "cbCancel";
+			cbCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			cbCancel.Size = new System.Drawing.Size(265, 65);
+			cbCancel.TabIndex = 3;
+			cbCancel.Text = "Cancel";
+			cbCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			cbCancel.UseVisualStyleBackColor = false;
+			cbCancel.Click += new System.EventHandler(cbCancel_Click);
 			// 
 			// cbOK
 			// 
-			this.cbOK.AllowDrop = true;
-			this.cbOK.BackColor = System.Drawing.Color.FromArgb(97, 44, 67);
-			this.cbOK.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cbOK.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.cbOK.Location = new System.Drawing.Point(72, 128);
-			this.cbOK.Name = "cbOK";
-			this.cbOK.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.cbOK.Size = new System.Drawing.Size(265, 65);
-			this.cbOK.TabIndex = 2;
-			this.cbOK.Text = "OK";
-			this.cbOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.cbOK.UseVisualStyleBackColor = false;
-			this.cbOK.Click += new System.EventHandler(this.cbOK_Click);
+			cbOK.AllowDrop = true;
+			cbOK.BackColor = System.Drawing.Color.FromArgb(97, 44, 67);
+			cbOK.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cbOK.ForeColor = System.Drawing.SystemColors.ControlText;
+			cbOK.Location = new System.Drawing.Point(72, 128);
+			cbOK.Name = "cbOK";
+			cbOK.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			cbOK.Size = new System.Drawing.Size(265, 65);
+			cbOK.TabIndex = 2;
+			cbOK.Text = "OK";
+			cbOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			cbOK.UseVisualStyleBackColor = false;
+			cbOK.Click += new System.EventHandler(cbOK_Click);
 			// 
 			// txtCode
 			// 
-			this.txtCode.AcceptsReturn = true;
-			this.txtCode.AllowDrop = true;
-			this.txtCode.BackColor = System.Drawing.SystemColors.Window;
-			this.txtCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtCode.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtCode.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtCode.Location = new System.Drawing.Point(24, 72);
-			this.txtCode.MaxLength = 0;
-			this.txtCode.Name = "txtCode";
-			this.txtCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtCode.Size = new System.Drawing.Size(633, 49);
-			this.txtCode.TabIndex = 1;
+			txtCode.AcceptsReturn = true;
+			txtCode.AllowDrop = true;
+			txtCode.BackColor = System.Drawing.SystemColors.Window;
+			txtCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtCode.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtCode.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtCode.Location = new System.Drawing.Point(24, 72);
+			txtCode.MaxLength = 0;
+			txtCode.Name = "txtCode";
+			txtCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtCode.Size = new System.Drawing.Size(633, 49);
+			txtCode.TabIndex = 1;
 			// 
 			// lblMessage
 			// 
-			this.lblMessage.AllowDrop = true;
-			this.lblMessage.BackColor = System.Drawing.Color.White;
-			this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblMessage.Font = new System.Drawing.Font("Gin", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
-			this.lblMessage.Location = new System.Drawing.Point(40, 24);
-			this.lblMessage.MinimumSize = new System.Drawing.Size(313, 41);
-			this.lblMessage.Name = "lblMessage";
-			this.lblMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblMessage.Size = new System.Drawing.Size(313, 41);
-			this.lblMessage.TabIndex = 0;
-			this.lblMessage.Text = "Enter GIFT CARD CODE";
+			lblMessage.AllowDrop = true;
+			lblMessage.BackColor = System.Drawing.Color.White;
+			lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblMessage.Font = new System.Drawing.Font("Gin", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblMessage.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
+			lblMessage.Location = new System.Drawing.Point(40, 24);
+			lblMessage.MinimumSize = new System.Drawing.Size(313, 41);
+			lblMessage.Name = "lblMessage";
+			lblMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblMessage.Size = new System.Drawing.Size(313, 41);
+			lblMessage.TabIndex = 0;
+			lblMessage.Text = "Enter GIFT CARD CODE";
 			// 
 			// frmGiftCardCode
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(688, 213);
-			this.ControlBox = false;
-			this.Controls.Add(this.cbCancel);
-			this.Controls.Add(this.cbOK);
-			this.Controls.Add(this.txtCode);
-			this.Controls.Add(this.lblMessage);
-			this.Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Location = new System.Drawing.Point(184, 250);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmGiftCardCode";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.ShowInTaskbar = false;
-			this.Text = "Enter Gift Card Code";
-			this.commandButtonHelper1.SetStyle(this.cbCancel, 1);
-			this.commandButtonHelper1.SetStyle(this.cbOK, 1);
-			this.Activated += new System.EventHandler(this.frmGiftCardCode_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			BackColor = System.Drawing.Color.White;
+			ClientSize = new System.Drawing.Size(688, 213);
+			ControlBox = false;
+			Controls.Add(cbCancel);
+			Controls.Add(cbOK);
+			Controls.Add(txtCode);
+			Controls.Add(lblMessage);
+			Font = new System.Drawing.Font("Brandon Grotesque Light", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			ForeColor = System.Drawing.Color.FromArgb(47, 75, 102);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			Location = new System.Drawing.Point(184, 250);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmGiftCardCode";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			ShowInTaskbar = false;
+			Text = "Enter Gift Card Code";
+			commandButtonHelper1.SetStyle(cbCancel, 1);
+			commandButtonHelper1.SetStyle(cbOK, 1);
+			Activated += new System.EventHandler(frmGiftCardCode_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			ResumeLayout(false);
 		}
 		#endregion
 	}
