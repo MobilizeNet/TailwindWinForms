@@ -41,89 +41,89 @@ namespace TailwindPOS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSearchCust));
-			ToolTipMain = new System.Windows.Forms.ToolTip(components);
-			ucLettersPad = new ucLettersPad();
-			cbClose = new System.Windows.Forms.Button();
-			fgCustomers = new UpgradeHelpers.DataGridViewFlex(components);
-			SuspendLayout();
-			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
-			((System.ComponentModel.ISupportInitialize) fgCustomers).BeginInit();
+			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
+			this.ucLettersPad = new ucLettersPad();
+			this.cbClose = new System.Windows.Forms.Button();
+			this.fgCustomers = new UpgradeHelpers.DataGridViewFlex(this.components);
+			this.SuspendLayout();
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
+			((System.ComponentModel.ISupportInitialize) this.fgCustomers).BeginInit();
 			// 
 			// ucLettersPad
 			// 
-			ucLettersPad.AllowDrop = true;
-			ucLettersPad.Location = new System.Drawing.Point(8, 24);
-			ucLettersPad.Name = "ucLettersPad";
-			ucLettersPad.Size = new System.Drawing.Size(633, 569);
-			ucLettersPad.TabIndex = 0;
-			ucLettersPad.OnEnterEvent += new ucLettersPad.OnEnterEventHandler(ucLettersPad_OnEnterEvent);
+			this.ucLettersPad.AllowDrop = true;
+			this.ucLettersPad.Location = new System.Drawing.Point(8, 24);
+			this.ucLettersPad.Name = "ucLettersPad";
+			this.ucLettersPad.Size = new System.Drawing.Size(633, 569);
+			this.ucLettersPad.TabIndex = 0;
+			this.ucLettersPad.OnEnterEvent += new ucLettersPad.OnEnterEventHandler(this.ucLettersPad_OnEnterEvent);
 			// 
 			// cbClose
 			// 
-			cbClose.AllowDrop = true;
-			cbClose.BackColor = System.Drawing.Color.FromArgb(97, 44, 67);
-			cbClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cbClose.ForeColor = System.Drawing.SystemColors.ControlText;
-			cbClose.Location = new System.Drawing.Point(1008, 640);
-			cbClose.Name = "cbClose";
-			cbClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cbClose.Size = new System.Drawing.Size(241, 57);
-			cbClose.TabIndex = 2;
-			cbClose.Text = "Close";
-			cbClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cbClose.UseVisualStyleBackColor = false;
-			cbClose.Click += new System.EventHandler(cbClose_Click);
+			this.cbClose.AllowDrop = true;
+			this.cbClose.BackColor = System.Drawing.Color.FromArgb(97, 44, 67);
+			this.cbClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 24f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cbClose.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cbClose.Location = new System.Drawing.Point(1008, 640);
+			this.cbClose.Name = "cbClose";
+			this.cbClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cbClose.Size = new System.Drawing.Size(241, 57);
+			this.cbClose.TabIndex = 2;
+			this.cbClose.Text = "Close";
+			this.cbClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cbClose.UseVisualStyleBackColor = false;
+			this.cbClose.Click += new System.EventHandler(this.cbClose_Click);
 			// 
 			// fgCustomers
 			// 
-			fgCustomers.AllowDrop = true;
-			fgCustomers.AllowUserToAddRows = false;
-			fgCustomers.AllowUserToDeleteRows = false;
-			fgCustomers.AllowUserToResizeColumns = false;
-			fgCustomers.AllowUserToResizeRows = false;
-			fgCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-			fgCustomers.ColumnsCount = 5;
-			fgCustomers.FixedColumns = 0;
-			fgCustomers.FixedRows = 1;
-			fgCustomers.FocusRect = UpgradeHelpers.FocusRectSettings.FocusNone;
-			fgCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			fgCustomers.Location = new System.Drawing.Point(648, 24);
-			fgCustomers.Name = "fgCustomers";
-			fgCustomers.ReadOnly = true;
-			fgCustomers.RowsCount = 2;
-			fgCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			fgCustomers.ShowCellToolTips = false;
-			fgCustomers.Size = new System.Drawing.Size(849, 577);
-			fgCustomers.StandardTab = true;
-			fgCustomers.TabIndex = 1;
-			fgCustomers.DoubleClick += new System.EventHandler(fgCustomers_DoubleClick);
+			this.fgCustomers.AllowDrop = true;
+			this.fgCustomers.AllowUserToAddRows = false;
+			this.fgCustomers.AllowUserToDeleteRows = false;
+			this.fgCustomers.AllowUserToResizeColumns = false;
+			this.fgCustomers.AllowUserToResizeRows = false;
+			this.fgCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+			this.fgCustomers.ColumnsCount = 5;
+			this.fgCustomers.FixedColumns = 0;
+			this.fgCustomers.FixedRows = 1;
+			this.fgCustomers.FocusRect = UpgradeHelpers.FocusRectSettings.FocusNone;
+			this.fgCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.fgCustomers.Location = new System.Drawing.Point(648, 24);
+			this.fgCustomers.Name = "fgCustomers";
+			this.fgCustomers.ReadOnly = true;
+			this.fgCustomers.RowsCount = 2;
+			this.fgCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.fgCustomers.ShowCellToolTips = false;
+			this.fgCustomers.Size = new System.Drawing.Size(849, 577);
+			this.fgCustomers.StandardTab = true;
+			this.fgCustomers.TabIndex = 1;
+			this.fgCustomers.DoubleClick += new System.EventHandler(this.fgCustomers_DoubleClick);
 			// 
 			// frmSearchCust
 			// 
-			AllowDrop = true;
-			AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
-			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			BackColor = System.Drawing.Color.White;
-			ClientSize = new System.Drawing.Size(1264, 737);
-			Controls.Add(ucLettersPad);
-			Controls.Add(cbClose);
-			Controls.Add(fgCustomers);
-			Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Location = new System.Drawing.Point(11, 34);
-			MaximizeBox = true;
-			MinimizeBox = true;
-			Name = "frmSearchCust";
-			RightToLeft = System.Windows.Forms.RightToLeft.No;
-			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			Text = "Customer Search";
-			commandButtonHelper1.SetStyle(cbClose, 1);
-			Activated += new System.EventHandler(frmSearchCust_Activated);
-			Closed += new System.EventHandler(Form_Closed);
-			Load += new System.EventHandler(Form_Load);
-			((System.ComponentModel.ISupportInitialize) fgCustomers).EndInit();
-			ResumeLayout(false);
+			this.AllowDrop = true;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
+			this.ClientSize = new System.Drawing.Size(1264, 737);
+			this.Controls.Add(this.ucLettersPad);
+			this.Controls.Add(this.cbClose);
+			this.Controls.Add(this.fgCustomers);
+			this.Font = new System.Drawing.Font("Arial", 21.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Location = new System.Drawing.Point(11, 34);
+			this.MaximizeBox = true;
+			this.MinimizeBox = true;
+			this.Name = "frmSearchCust";
+			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Customer Search";
+			this.commandButtonHelper1.SetStyle(this.cbClose, 1);
+			this.Activated += new System.EventHandler(this.frmSearchCust_Activated);
+			this.Closed += new System.EventHandler(this.Form_Closed);
+			this.Load += new System.EventHandler(this.Form_Load);
+			((System.ComponentModel.ISupportInitialize) this.fgCustomers).EndInit();
+			this.ResumeLayout(false);
 		}
 		#endregion
 	}
