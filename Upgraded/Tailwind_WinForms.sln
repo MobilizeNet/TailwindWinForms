@@ -4,9 +4,9 @@ Project("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}") = "TailwindPOS", "TailwindPOS.
 EndProject
 Project("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}") = "Tailwind_WinFormsSupport", "Tailwind_WinFormsSupport\Tailwind_WinFormsSupport.csproj", "{F4752893-5AA4-48FA-9AE4-21E589D6A9C5}"
 EndProject
-Project("{2150E333-8FDC-42a3-9474-1A3956D46DE8}") = "TailwindPOS.csproj", "TailwindPOS.csproj", "{3AD24CA0-E9C1-4671-8406-720862E82017}"
+Project("{2150E333-8FDC-42a3-9474-1A3956D46DE8}") = "TailwindPOS.csproj", "TailwindPOS.csproj", "{6DD47CA1-BFBC-4AAB-8DE9-8E6375FB2EFB}"
 EndProject
-Project("{2150E333-8FDC-42a3-9474-1A3956D46DE8}") = "Tailwind_WinFormsSupport", "Tailwind_WinFormsSupport", "{1FF88D9F-3727-484C-A60D-637C583F6015}"
+Project("{2150E333-8FDC-42a3-9474-1A3956D46DE8}") = "Tailwind_WinFormsSupport", "Tailwind_WinFormsSupport", "{AF86D61E-5A50-486F-8B1E-4F39D88C3BFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,7 +37,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7A56289E-6BD8-468F-BAC1-D3916EB3873F} = {3AD24CA0-E9C1-4671-8406-720862E82017}
-		{F4752893-5AA4-48FA-9AE4-21E589D6A9C5} = {1FF88D9F-3727-484C-A60D-637C583F6015}
+		{7A56289E-6BD8-468F-BAC1-D3916EB3873F} = {6DD47CA1-BFBC-4AAB-8DE9-8E6375FB2EFB}
+		{F4752893-5AA4-48FA-9AE4-21E589D6A9C5} = {AF86D61E-5A50-486F-8B1E-4F39D88C3BFA}
 	EndGlobalSection
 EndGlobal
