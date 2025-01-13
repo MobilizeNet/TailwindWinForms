@@ -118,7 +118,7 @@ namespace TailwindPOS
 			// frmGiftCardCode
 			// 
 			AllowDrop = true;
-			AutoScaleDimensions = new System.Drawing.SizeF(16, 31);
+			AutoScaleDimensions = new System.Drawing.SizeF(15, 33);
 			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			BackColor = System.Drawing.Color.White;
 			ClientSize = new System.Drawing.Size(688, 213);
